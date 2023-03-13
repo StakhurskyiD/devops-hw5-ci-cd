@@ -4,7 +4,8 @@
   "description": "Docker a node.js app by writing your own Dockerfile.\r # 1. Build the Docker image by running the following command\r docker build -t devops-dockerlab .\r # 2. Run a Docker container with limits on CPU and memory by running the following command:\r docker run -d -p 80:80 --name my-node-app --cpus 0.5 --memory 512m my-node-app\r # 3.\r # 4.Push your Docker image to Docker Hub by running the following command:\r docker tag devops-dockerlab dstakhurskyi/devops-dockerlab\r docker push dstakhurskyi/devops-dockerlab\r # 5.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
