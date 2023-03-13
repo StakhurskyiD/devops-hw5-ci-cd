@@ -28,11 +28,11 @@ docker pull dstakhurskyi/devops-dockerlab
 ```
 docker pull node
 ```
-3. Run the container using the docker run command. Run the npm start command inside the container:
+<font size = "3"> 3. Run the container using the docker run command. Run the npm start command inside the container: </font>
  ```
 docker run -p 8080:80 devops-dockerlab npm start
 ```
-4. Stop running container:
+<font size = "3"> 4. Stop running container: </font>
 ```
 docker stop devops-dockerlab
 ```
