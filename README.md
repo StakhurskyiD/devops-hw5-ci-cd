@@ -32,7 +32,7 @@ docker pull node
  ```
 docker run -p 8080:80 devops-dockerlab npm start
 ```
-Test application by opening a web browser and navigating to http://localhost:8080.
+<i>Test application by opening a web browser and navigating to</i> http://localhost:8080.
  
 <font size = "3"> 4. Stop running container: </font>
 ```
