@@ -1,5 +1,5 @@
 # devops-dockerlab
-<font size = "5"> Docker a node.js app by writing your own Dockerfile. </font>
+<font size = "5"> <b> Docker a node.js app by writing your own Dockerfile. </b> </font>
 
 <font size = "3"> 1. Build the Docker image by running the following command  </font>
 ```
