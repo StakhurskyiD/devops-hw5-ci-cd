@@ -1,5 +1,6 @@
 # devops-dockerlab
 <font size = "5"> Docker a node.js app by writing your own Dockerfile. </font>
+
 <font size = "3"> 1. Build the Docker image by running the following command  </font>
 ```
 docker build -t devops-dockerlab .
@@ -17,7 +18,8 @@ docker tag devops-dockerlab dstakhurskyi/devops-dockerlab
 docker push dstakhurskyi/devops-dockerlab
 ```
 
-<font size = "5"> Run a container from a pulled Docker image. </font>
+<font size = "5"> <b> Run a container from a pulled Docker image. </b> </font>
+
 <font size = "3"> 1. Pull the Docker image from Docker Hub: </font>
 ```
 docker pull dstakhurskyi/devops-dockerlab
