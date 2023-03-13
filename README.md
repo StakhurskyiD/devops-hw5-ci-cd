@@ -9,11 +9,11 @@ docker build -t devops-dockerlab .
 ```
 docker run -d -p 80:80 --name devops-dockerlab --cpus 0.5 --memory 512m devops-dockerlab
 ```
-<font size = "3"> 3.Create a tag:  </font>
+<font size = "3"> 3. Create a tag:  </font>
 ```
 docker tag devops-dockerlab dstakhurskyi/devops-dockerlab
 ```
-<font size = "3"> 4.Push Docker image to Docker Hub by running the following command:  </font>
+<font size = "3"> 4. Push Docker image to Docker Hub by running the following command:  </font>
 ```
 docker push dstakhurskyi/devops-dockerlab
 ```
