@@ -1,4 +1,4 @@
-# hw5-worflow
+# HomeWork: CI/CD
 
 # Description:
 Workflow in which the project is assembled on nodejs and its testing.
