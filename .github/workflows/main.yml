@@ -42,7 +42,4 @@ jobs:
         docker run -d -p 3000:3000 --name hw5-workflow-container dstakhursky/hw5-workflow:latest
         sleep 10
         curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/my-route | grep -q '200'
-
-    - name: Stop Docker container (optional)
-      if: always()
-      run: docker stop hw5-workflow-container
+      if: always() # This step should always run, regardless of the exit code.
