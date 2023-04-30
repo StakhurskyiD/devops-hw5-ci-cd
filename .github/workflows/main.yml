@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      
+
   workflow_dispatch:
 
 jobs:
@@ -29,13 +29,13 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t my-docker-image .
-        docker tag my-docker-image:latest dstakhurskyi/hw5-workflow:latest   
+        docker tag my-docker-image:latest dstakhursky/hw5-workflow:latest   
 
     - name: Log in to Docker Hub
       run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
     - name: Push Docker image to Docker Hub
-      run: docker push dstakhurskyi/hw5-workflow:latest
+      run: docker push dstakhursky/hw5-workflow:latest
 
     - name: Test Docker image (optional)
       run: |
