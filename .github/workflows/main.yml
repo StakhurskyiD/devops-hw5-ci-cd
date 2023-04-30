@@ -27,15 +27,16 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t my-docker-image .
-        docker tag hw5-workflow:latest dstakhurskyi/hw5-workflow:latest   
+        docker tag my-docker-image:latest dstakhurskyi/hw5-workflow:latest   
+
     - name: Log in to Docker Hub
       run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
     - name: Push Docker image to Docker Hub
       run: docker push dstakhurskyi/hw5-workflow:latest
 
-   - name: Test Docker image (optional)
-     run: |
-      docker run -d -p 3000:3000 --name hw5-workflow-container hw5-workflow:latest
-      sleep 10
-      curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/my-route | grep -q '200'
+    - name: Test Docker image (optional)
+      run: |
+        docker run -d -p 3000:3000 --name hw5-workflow-container my-docker-image:latest
+        sleep 10
+        curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/my-route | grep -q '200'
